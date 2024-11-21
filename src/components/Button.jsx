@@ -1,27 +1,27 @@
 const Button = ({
   label,
   iconURL,
-  backgroundColor,
-  textColor,
-  borderColor,
+  backgroundColor = "bg-coral-red",
+  textColor = "text-white",
+  borderColor = "border-coral-red",
   fullWidth,
+  type = "button",
 }) => {
-  return (
-    <button
-      className={`flex justify-center items-center gap-2 px-7 py-4 border font-montserrat text-lg leading-none
-      ${
-        backgroundColor
-          ? `${backgroundColor} ${textColor} ${borderColor}`
-          : "bg-coral-red text-white border-coral-red"
-      } rounded-full ${fullWidth && "w-full"}`}
-    >
-      {label}
+  const buttonClasses = `
+    flex justify-center items-center gap-2 px-4 py-3 sm:px-7 sm:py-4 
+    font-montserrat text-base sm:text-lg leading-none 
+    rounded-full transition-all duration-300 ease-in-out 
+    hover:bg-opacity-90 active:scale-95 focus:ring-2 focus:ring-offset-2 focus:ring-coral-red
+    ${fullWidth ? "w-full" : ""} ${backgroundColor} ${textColor} ${borderColor}`;
 
+  return (
+    <button type={type} className={buttonClasses}>
+      {label}
       {iconURL && (
         <img
           src={iconURL}
-          alt='arrow right icon'
-          className='ml-2 rounded-full bg-white w-5 h-5'
+          alt={`${label} icon`}
+          className="ml-2 rounded-full bg-white w-5 h-5"
         />
       )}
     </button>

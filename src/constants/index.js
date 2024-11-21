@@ -3,8 +3,8 @@ import { bigShoe1, bigShoe2, bigShoe3, customer1, customer2, shoe4, shoe5, shoe6
 
 export const navLinks = [
     { href: "#home", label: "Home" },
-    { href: "#about-us", label: "About Us" },
     { href: "#products", label: "Products" },
+    { href: "#about-us", label: "About Us" },
     { href: "#contact-us", label: "Contact Us" },
 ];
 
@@ -24,31 +24,31 @@ export const shoes = [
 ];
 
 export const statistics = [
-    { value: '1k+', label: 'Brands' },
-    { value: '500+', label: 'Shops' },
-    { value: '250k+', label: 'Customers' },
+    { value: '190+', label: 'Countries' },
+    { value: '1k+', label: 'Professional Athletes' },
+    { value: '500M+', label: 'Customers' },
 ];
 
 export const products = [
     {
         imgURL: shoe4,
-        name: "Nike Air Jordan-01",
-        price: "$200.20",
+        name: "Nike Air Yeezy 1",
+        price: "$1.8 million",
     },
     {
         imgURL: shoe5,
-        name: "Nike Air Jordan-10",
-        price: "$210.20",
+        name: "Air Jordan 12 Flu Game",
+        price: "$104,000",
     },
     {
         imgURL: shoe6,
-        name: "Nike Air Jordan-100",
-        price: "$220.20",
+        name: "Air Jordan 1 Chicago",
+        price: "$560,000",
     },
     {
         imgURL: shoe7,
-        name: "Nike Air Jordan-001",
-        price: "$230.20",
+        name: "Nike Dunk SB Low Paris",
+        price: "$62,000",
     },
 ];
 
@@ -93,9 +93,10 @@ export const footerLinks = [
             { name: "Air Force 1", link: "/" },
             { name: "Air Max 1", link: "/" },
             { name: "Air Jordan 1", link: "/" },
-            { name: "Air Force 2", link: "/" },
-            { name: "Nike Waffle Racer", link: "/" },
-            { name: "Nike Cortez", link: "/" },
+            { name: "Nike Air Yeezy 1", link: "/" },
+            { name: "Air Jordan 12 Flu Game", link: "/" },
+            { name: "Air Jordan 1 Chicago", link: "/" },
+            { name: "Nike Dunk SB Low Paris", link: "/" },
         ],
     },
     {
@@ -121,4 +122,5 @@ export const socialMedia = [
     { src: facebook, alt: "facebook logo" },
     { src: twitter, alt: "twitter logo" },
     { src: instagram, alt: "instagram logo" },
+     
 ];

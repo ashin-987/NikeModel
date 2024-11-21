@@ -56,3 +56,50 @@
     @apply font-montserrat text-slate-gray text-lg leading-7;
   }
 }
+
+/* Dropdown menu styles */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000; /* Higher than hero section */
+  background-color: rgba(0, 0, 0, 0.95); /* Full opacity for better focus */
+  overflow-y: auto; /* Allows scrolling */
+}
+
+/* Overlay to block interactions with background */
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999; /* Slightly lower than menu */
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent */
+}
+
+
+/* Ensure hero heading stays behind dropdown */
+h1 {
+  position: relative;
+  z-index: 1; /* Keep it lower than dropdown */
+}
+
+/* Optional: Lower the hero container as a whole */
+.hero-section {
+  position: relative;
+  z-index: 1; /* Ensure it's below the dropdown */
+}
+
+/* Disable pointer events on hero when dropdown is active */
+.hero-section.dropdown-active {
+  pointer-events: none;
+  z-index: 0; /* Ensure dropdown is on top */
+}
+
+.big-shoe-image {
+  position: relative;
+  z-index: 1; /* Ensure it remains below the dropdown menu */
+}
